@@ -31,7 +31,7 @@ sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Player, function (sprite, otherSp
     info.changeLifeBy(-1)
     music.play(music.createSoundEffect(WaveShape.Sawtooth, 300, 200, 255, 0, 75, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
 })
-info.onScore(20, function () {
+info.onScore(50, function () {
     game.gameOver(true)
 })
 let myRock: Sprite = null
